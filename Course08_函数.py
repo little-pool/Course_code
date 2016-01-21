@@ -217,13 +217,30 @@ else:
     5! = 5*4*3*2*1,用递归可以把这个问题理解为:5!=5*4!;4!=4*3!...
     那么我们只要将问题追溯到1!=1就可以反推任何数字的阶乘了,在计算机中,是用栈的方式来处理的,着咱们不需要理解
     '''
-    if True:
+    if False:
         def recursion_fatorial(n):
             if n == 1:
                 return 1
             else:
                 return n*recursion_fatorial(n-1)
         print(recursion_fatorial(3))
+    else:
+        pass
+
+    '''
+    4.2趣味问题:
+    有5个人并排而坐,我们想知道第一个人的年龄,第一个人说他比第二个人大两岁,第二个人说他比第三个人大两岁,第三个人说他比第四个人大两岁
+    第四个人说他比第五个人大两岁,第五个人说他10岁;
+    '''
+    if True:
+        def get_age(num):
+            if num == 5:
+                return 10
+            else:
+                return get_age(num+1)+2
+
+        print(get_age(5))
+
     else:
         pass
 
